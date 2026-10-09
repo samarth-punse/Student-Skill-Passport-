@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My SkillPassport</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><b>S</b> SkillPassport</a>
+    <small>WORKSPACE</small>
+    
+    <a class="side" href="dashboard.html">▦ Overview</a>
+    <a class="side active" href="profile.html">◉ My SkillPassport</a>
+    <a class="side" href="#skills">◇ My Skills</a>
+    <a class="side" href="dashboard.html#evidence">▤ Evidence & Projects</a>
+    
+    <div class="sidebottom">
+      <p>
+        <b>SP Sam Student</b><br>
+        <small>Student account</small>
+      </p>
+      <a class="side" href="index.html">↪ Sign out</a>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main">
+    
+    <!-- Top Header Bar -->
+    <header class="top">
+      <div>
+        <small>Workspace / My SkillPassport</small>
+        <h1>My SkillPassport</h1>
+        <p class="muted">A structured view of your skills, evidence, and learning journey.</p>
+      </div>
+      <button class="button" id="share">Share profile ↗</button>
+    </header>
+
+    <!-- Profile Hero Section -->
+    <section class="profilehero">
+      <b class="bigavatar">SP</b>
+      <div class="grow">
+        <label class="verified">● Student profile</label>
+        <h2>Sam Student</h2>
+        <p class="muted">Computer Engineering Student · Aspiring Software Developer</p>
+        <span class="chip">Web Development</span>
+        <span class="chip">Python</span>
+        <span class="chip">Problem Solving</span>
+      </div>
+      
+      <div class="score">
+        <strong>72%</strong>
+        <small>Profile complete</small>
+        <div class="progress"><i style="width:72%"></i></div>
+      </div>
+    </section>
+
+    <!-- Two-Column Layout for Panels -->
+    <section class="columns profilecols">
+      
+      <!-- Left Panel: Skills & Proficiency -->
+      <article class="panel" id="skills">
+        <header>
+          <div>
+            <h3>Skills & proficiency</h3>
+            <p class="muted">Claimed and evidence-backed skills are labelled separately.</p>
+          </div>
+          <button class="outline smallbtn" id="addSkill">+ Add skill</button>
+        </header>
+        
+        <div id="skillList">
+          <div class="skill">
+            <span>
+              <strong>Python</strong>
+              <small>Intermediate</small>
+            </span>
+            <div class="level"><i style="width:68%"></i></div>
+            <label class="verified">Verified</label>
+          </div>
+          
+          <div class="skill">
+            <span>
+              <strong>HTML & CSS</strong>
+              <small>Intermediate</small>
+            </span>
+            <div class="level"><i style="width:66%"></i></div>
+            <label class="verified">Verified</label>
+          </div>
+          
+          <div class="skill">
+            <span>
+              <strong>Git & GitHub</strong>
+              <small>Beginner</small>
+            </span>
+            <div class="level"><i style="width:34%"></i></div>
+            <label class="self">Self-declared</label>
+          </div>
+          
+          <div class="skill">
+            <span>
+              <strong>SQL</strong>
+              <small>Beginner</small>
+            </span>
+            <div class="level"><i style="width:28%"></i></div>
+            <label class="pending">In review</label>
+          </div>
+        </div>
+      </article>
+
+      <!-- Right Panel: Evidence & Projects -->
+      <article class="panel">
+        <header>
+          <div>
+            <h3>Evidence & projects</h3>
+            <p class="muted">Examples of work connected to skills</p>
+          </div>
+        </header>
+        
+        <div class="project">
+          <small>PROJECT 01</small>
+          <strong>Student Portfolio Website</strong>
+          <p>A responsive portfolio showcasing profile, skills and projects.</p>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+        </div>
+        
+        <div class="project">
+          <small>PROJECT 02</small>
+          <strong>Mini Data Analysis</strong>
+          <p>A beginner project exploring and summarizing a small dataset.</p>
+          <span class="chip">Python</span>
+          <span class="chip">Data Analysis</span>
+        </div>
+        
+        <div class="project">
+          <small>CERTIFICATE</small>
+          <strong>Python Fundamentals</strong>
+          <p>Certificate evidence for foundational Python knowledge.</p>
+          <span class="chip">Python</span>
+        </div>
+      </article>
+      
+    </section>
+
+    <p class="notice">Prototype preview · Verification badges are examples only; no assessment or verification backend is connected.</p>
+    
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

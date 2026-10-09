@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | SkillPassport</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><b>S</b> SkillPassport</a>
+    <small>WORKSPACE</small>
+    
+    <a class="side active" href="dashboard.html">▦ Overview</a>
+    <a class="side" href="profile.html">◉ My SkillPassport</a>
+    <a class="side" href="#skills">◇ My Skills</a>
+    <a class="side" href="#evidence">▤ Evidence & Projects</a>
+    
+    <div class="sidebottom">
+      <p>
+        <b>SP Sam Student</b><br>
+        <small>Student account</small>
+      </p>
+      <a class="side" href="index.html">↪ Sign out</a>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main">
+    
+    <!-- Top Header Bar -->
+    <header class="top">
+      <div>
+        <small>Workspace / Overview</small>
+        <h1>Good afternoon, Sam ✦</h1>
+        <p class="muted">Your skills deserve to be seen. Here's your progress at a glance.</p>
+      </div>
+      <a class="button" href="profile.html">View my passport ↗</a>
+    </header>
+
+    <!-- Welcome / Call to Action Banner -->
+    <section class="banner">
+      <small>YOUR CAREER, MORE THAN A CGPA</small>
+      <h2>Turn learning into proof.</h2>
+      <p>Keep your skills and evidence together, and make your progress visible.</p>
+      <a href="profile.html">Explore your SkillPassport →</a>
+    </section>
+
+    <!-- Statistics Grid -->
+    <section class="stats">
+      <article>
+        <small>Across your profile</small>
+        <strong>06</strong>
+        <b>Skills added</b>
+        <p>Keep building your skill set</p>
+      </article>
+      
+      <article>
+        <small>Demo data</small>
+        <strong>03</strong>
+        <b>Verified skills</b>
+        <p>Evidence-backed competencies</p>
+      </article>
+      
+      <article>
+        <small>Portfolio</small>
+        <strong>04</strong>
+        <b>Projects & certificates</b>
+        <p>Show the work behind the skill</p>
+      </article>
+      
+      <article>
+        <small>Profile status</small>
+        <strong>72%</strong>
+        <b>Profile completeness</b>
+        <div class="progress"><i style="width:72%"></i></div>
+      </article>
+    </section>
+
+    <!-- Two-Column Layout for Panels -->
+    <section class="columns">
+      
+      <!-- Left Panel: Skills -->
+      <article class="panel" id="skills">
+        <header>
+          <div>
+            <h3>Skill verification</h3>
+            <p class="muted">A snapshot of your skill profile</p>
+          </div>
+          <a href="profile.html">View all →</a>
+        </header>
+        
+        <div class="row">
+          <b class="tile">Py</b>
+          <span>
+            <strong>Python</strong>
+            <small>Intermediate · Assessment completed</small>
+          </span>
+          <label class="verified">✓ Verified</label>
+        </div>
+        
+        <div class="row">
+          <b class="tile blue">HT</b>
+          <span>
+            <strong>HTML & CSS</strong>
+            <small>Intermediate · Project evidence</small>
+          </span>
+          <label class="verified">✓ Verified</label>
+        </div>
+        
+        <div class="row">
+          <b class="tile orange">DB</b>
+          <span>
+            <strong>SQL</strong>
+            <small>Beginner · Self-declared</small>
+          </span>
+          <label class="pending">In review</label>
+        </div>
+        
+        <div class="row">
+          <b class="tile green">GI</b>
+          <span>
+            <strong>Git & GitHub</strong>
+            <small>Beginner · Repository link</small>
+          </span>
+          <label class="self">Self-declared</label>
+        </div>
+      </article>
+
+      <!-- Right Panel: Evidence -->
+      <article class="panel" id="evidence">
+        <header>
+          <div>
+            <h3>Recent evidence</h3>
+            <p class="muted">Work that supports your skills</p>
+          </div>
+          <small>DEMO</small>
+        </header>
+        
+        <div class="evidence">
+          <b>⌘</b>
+          <span>
+            <strong>Student Portfolio Website</strong>
+            <small>Project · Web Development</small>
+          </span>
+          ✓
+        </div>
+        
+        <div class="evidence">
+          <b class="blue">▣</b>
+          <span>
+            <strong>Python Fundamentals</strong>
+            <small>Certificate · Python</small>
+          </span>
+          ✓
+        </div>
+        
+        <div class="evidence">
+          <b class="green">⌁</b>
+          <span>
+            <strong>Mini Data Analysis</strong>
+            <small>Project · Python</small>
+          </span>
+          •
+        </div>
+        
+        <a class="outline" href="profile.html">Open full profile</a>
+      </article>
+      
+    </section>
+
+    <p class="notice">Prototype preview · All names, counts, and verification statuses are illustrative demo data.</p>
+    
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

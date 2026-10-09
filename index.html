@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillPassport | Sign In</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+  
+  <nav class="nav">
+    <a class="brand" href="index.html"><b>S</b> SkillPassport</a>
+    <a href="dashboard.html">View demo ↗</a>
+  </nav>
+
+  <main class="auth-grid">
+    <!-- Value Proposition Section -->
+    <section class="story">
+      <small>YOUR SKILLS. YOUR PROOF. YOUR FUTURE.</small>
+      <h1>Show what you can do,<br><em>not just your marks.</em></h1>
+      <p>Build a trusted profile of your skills, projects, certifications, and real-world achievements — all in one place.</p>
+      
+      <div class="proof">
+        <b>SP</b>
+        <span>
+          <strong>A clearer picture of your potential</strong>
+          <small>One profile. Meaningful evidence. Better opportunities.</small>
+        </span>
+      </div>
+    </section>
+
+    <!-- Authentication Form Section -->
+    <section class="form-wrap">
+      <form id="loginForm" class="form">
+        <small class="purple">WELCOME BACK</small>
+        <h2>Sign in to SkillPassport</h2>
+        <p class="muted">Use the demo form to explore the student experience.</p>
+        
+        <label>Email address</label>
+        <input type="email" placeholder="you@example.com" required>
+        
+        <label>Password</label>
+        <input type="password" placeholder="Enter any demo password" minlength="4" required>
+        
+        <div class="between">
+          <label class="check">
+            <input type="checkbox" checked> Remember me
+          </label>
+          <small>Demo interface</small>
+        </div>
+        
+        <button class="primary">Sign in <span>→</span></button>
+        <p id="message" class="success"></p>
+        
+        <hr>
+        
+        <button type="button" class="outline" id="signup">Create a student account</button>
+        <p class="tiny muted">Prototype only: authentication is not connected to a backend yet.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 SkillPassport · Student skill verification platform</footer>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
