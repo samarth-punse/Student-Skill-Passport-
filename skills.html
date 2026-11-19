@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Skills | SkillPassport</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><b>S</b> SkillPassport</a>
+    <small>WORKSPACE</small>
+
+    <a class="side" href="dashboard.html">▦ Overview</a>
+    <a class="side" href="profile.html">◉ My SkillPassport</a>
+    <a class="side" href="skills.html">◇ My Skills</a>
+    <a class="side" href="evidence.html">▤ Evidence & Projects</a>
+
+    <div class="sidebottom">
+      <p>
+        <b>SP Sam Student</b><br>
+        <small>Student account</small>
+      </p>
+      <a class="side" href="index.html">↪ Sign out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="top">
+      <div>
+        <small>Workspace / My Skills</small>
+        <h1>My Skills</h1>
+        <p class="muted">Manage your abilities and showcase what you have learned.</p>
+      </div>
+      <a class="button" href="profile.html">View my passport ↗</a>
+    </header>
+
+    <section class="banner">
+      <small>YOUR SKILL PROFILE</small>
+      <h2>Every skill tells a story.</h2>
+      <p>Document your abilities, track your proficiency, and build evidence of your learning.</p>
+    </section>
+
+    <section class="stats">
+
+      <article>
+        <small>Skill portfolio</small>
+        <strong>06</strong>
+        <b>Total Skills</b>
+        <p>Skills added to your profile</p>
+      </article>
+
+      <article>
+        <small>Assessment status</small>
+        <strong>03</strong>
+        <b>Verified</b>
+        <p>Evidence-backed competencies</p>
+      </article>
+
+      <article>
+        <small>Verification status</small>
+        <strong>01</strong>
+        <b>In Review</b>
+        <p>Awaiting verification</p>
+      </article>
+
+      <article>
+        <small>Profile status</small>
+        <strong>02</strong>
+        <b>Self-declared</b>
+        <p>Added by the student</p>
+      </article>
+
+    </section>
+
+    <section class="panel">
+
+      <header>
+        <div>
+          <h3>Technical Skills</h3>
+          <p class="muted">Your current technical abilities and proficiency levels</p>
+        </div>
+        <button class="button" id="addSkill">+ Add New Skill</button>
+      </header>
+
+      <div id="skillList">
+
+        <div class="row">
+          <b class="tile">Py</b>
+          <span>
+            <strong>Python</strong>
+            <small>Programming · Intermediate</small>
+          </span>
+          <label class="verified">✓ Verified</label>
+        </div>
+
+        <div class="row">
+          <b class="tile blue">HT</b>
+          <span>
+            <strong>HTML & CSS</strong>
+            <small>Web Development · Intermediate</small>
+          </span>
+          <label class="verified">✓ Verified</label>
+        </div>
+
+        <div class="row">
+          <b class="tile orange">DB</b>
+          <span>
+            <strong>SQL</strong>
+            <small>Database · Beginner</small>
+          </span>
+          <label class="pending">In Review</label>
+        </div>
+
+        <div class="row">
+          <b class="tile green">GI</b>
+          <span>
+            <strong>Git & GitHub</strong>
+            <small>Development Tools · Beginner</small>
+          </span>
+          <label class="self">Self-declared</label>
+        </div>
+
+        <div class="row">
+          <b class="tile">C++</b>
+          <span>
+            <strong>C++ Programming</strong>
+            <small>Programming · Beginner</small>
+          </span>
+          <label class="self">Self-declared</label>
+        </div>
+
+        <div class="row">
+          <b class="tile blue">JS</b>
+          <span>
+            <strong>JavaScript</strong>
+            <small>Web Development · Beginner</small>
+          </span>
+          <label class="verified">✓ Verified</label>
+        </div>
+
+      </div>
+
+    </section>
+
+    <p class="notice">
+      Prototype preview · Skill information and verification statuses are illustrative demo data.
+    </p>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
