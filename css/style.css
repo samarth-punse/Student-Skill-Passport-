@@ -760,3 +760,87 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Skill Search and Filter */
+
+.skill-filters {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.skill-filters input,
+.skill-filters select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  color: #333;
+}
+
+.skill-filters input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.skill-filters select {
+  min-width: 170px;
+}
+
+.editSkill {
+  padding: 7px 13px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+/* Profile Photo */
+.photo-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.photo-edit-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #6c4be8;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.photo-edit-btn:hover {
+  background: #5635cf;
+}
+
+.photo-remove-btn {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background: transparent;
+  color: #d9534f;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.photo-remove-btn:hover {
+  text-decoration: underline;
+}

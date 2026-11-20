@@ -15,7 +15,7 @@
 
     <a class="side" href="dashboard.html">▦ Overview</a>
     <a class="side" href="profile.html">◉ My SkillPassport</a>
-    <a class="side" href="skills.html">◇ My Skills</a>
+    <a class="side active" href="skills.html">◇ My Skills</a>
     <a class="side" href="evidence.html">▤ Evidence & Projects</a>
 
     <div class="sidebottom">
@@ -86,9 +86,28 @@
         <button class="button" id="addSkill">+ Add New Skill</button>
       </header>
 
+      <!-- Search and Category Filters -->
+      <div class="skill-filters">
+
+        <input
+          type="text"
+          id="searchSkill"
+          placeholder="Search skills..."
+        >
+
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="programming">Programming</option>
+          <option value="web">Web Development</option>
+          <option value="database">Database</option>
+          <option value="tools">Development Tools</option>
+        </select>
+
+      </div>
+
       <div id="skillList">
 
-        <div class="row">
+        <div class="row skill-item" data-category="programming">
           <b class="tile">Py</b>
           <span>
             <strong>Python</strong>
@@ -97,7 +116,7 @@
           <label class="verified">✓ Verified</label>
         </div>
 
-        <div class="row">
+        <div class="row skill-item" data-category="web">
           <b class="tile blue">HT</b>
           <span>
             <strong>HTML & CSS</strong>
@@ -106,7 +125,7 @@
           <label class="verified">✓ Verified</label>
         </div>
 
-        <div class="row">
+        <div class="row skill-item" data-category="database">
           <b class="tile orange">DB</b>
           <span>
             <strong>SQL</strong>
@@ -115,7 +134,7 @@
           <label class="pending">In Review</label>
         </div>
 
-        <div class="row">
+        <div class="row skill-item" data-category="tools">
           <b class="tile green">GI</b>
           <span>
             <strong>Git & GitHub</strong>
@@ -124,7 +143,7 @@
           <label class="self">Self-declared</label>
         </div>
 
-        <div class="row">
+        <div class="row skill-item" data-category="programming">
           <b class="tile">C++</b>
           <span>
             <strong>C++ Programming</strong>
@@ -133,7 +152,7 @@
           <label class="self">Self-declared</label>
         </div>
 
-        <div class="row">
+        <div class="row skill-item" data-category="web">
           <b class="tile blue">JS</b>
           <span>
             <strong>JavaScript</strong>
@@ -143,6 +162,10 @@
         </div>
 
       </div>
+
+      <p id="noSkills" class="muted" style="display:none;">
+        No matching skills found.
+      </p>
 
     </section>
 

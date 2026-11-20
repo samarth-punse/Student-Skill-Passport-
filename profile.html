@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +12,12 @@
   <aside class="sidebar">
     <a class="brand" href="index.html"><b>S</b> SkillPassport</a>
     <small>WORKSPACE</small>
-    
+
     <a class="side" href="dashboard.html">▦ Overview</a>
     <a class="side active" href="profile.html">◉ My SkillPassport</a>
     <a class="side" href="skills.html">◇ My Skills</a>
-    <a class="side" href="evidence.html">▤ Evidence & Projects</a>    
-    
+    <a class="side" href="evidence.html">▤ Evidence & Projects</a>
+
     <div class="sidebottom">
       <p>
         <b>SP Sam Student</b><br>
@@ -30,7 +29,7 @@
 
   <!-- Main Content Area -->
   <main class="main">
-    
+
     <!-- Top Header Bar -->
     <header class="top">
       <div>
@@ -43,7 +42,35 @@
 
     <!-- Profile Hero Section -->
     <section class="profilehero">
-      <b class="bigavatar">SP</b>
+
+      <!-- Profile Photo -->
+      <div class="photo-container">
+        <img
+          id="profilePhoto"
+          class="profile-photo"
+          src=""
+          alt="Profile photo"
+          style="display:none;"
+        >
+
+        <b class="bigavatar" id="defaultAvatar">SP</b>
+
+        <button
+          type="button"
+          class="photo-edit-btn"
+          id="editPhoto"
+          title="Edit profile photo"
+          aria-label="Edit profile photo"
+        >✎</button>
+
+        <input
+          type="file"
+          id="photoInput"
+          accept="image/png, image/jpeg"
+          hidden
+        >
+      </div>
+
       <div class="grow">
         <label class="verified">● Student profile</label>
         <h2>Sam Student</h2>
@@ -52,7 +79,7 @@
         <span class="chip">Python</span>
         <span class="chip">Problem Solving</span>
       </div>
-      
+
       <div class="score">
         <strong>72%</strong>
         <small>Profile complete</small>
@@ -62,7 +89,7 @@
 
     <!-- Two-Column Layout for Panels -->
     <section class="columns profilecols">
-      
+
       <!-- Left Panel: Skills & Proficiency -->
       <article class="panel" id="skills">
         <header>
@@ -72,7 +99,7 @@
           </div>
           <button class="outline smallbtn" id="addSkill">+ Add skill</button>
         </header>
-        
+
         <div id="skillList">
           <div class="skill">
             <span>
@@ -82,7 +109,7 @@
             <div class="level"><i style="width:68%"></i></div>
             <label class="verified">Verified</label>
           </div>
-          
+
           <div class="skill">
             <span>
               <strong>HTML & CSS</strong>
@@ -91,7 +118,7 @@
             <div class="level"><i style="width:66%"></i></div>
             <label class="verified">Verified</label>
           </div>
-          
+
           <div class="skill">
             <span>
               <strong>Git & GitHub</strong>
@@ -100,7 +127,7 @@
             <div class="level"><i style="width:34%"></i></div>
             <label class="self">Self-declared</label>
           </div>
-          
+
           <div class="skill">
             <span>
               <strong>SQL</strong>
@@ -120,7 +147,7 @@
             <p class="muted">Examples of work connected to skills</p>
           </div>
         </header>
-        
+
         <div class="project">
           <small>PROJECT 01</small>
           <strong>Student Portfolio Website</strong>
@@ -129,7 +156,7 @@
           <span class="chip">CSS</span>
           <span class="chip">JavaScript</span>
         </div>
-        
+
         <div class="project">
           <small>PROJECT 02</small>
           <strong>Mini Data Analysis</strong>
@@ -137,7 +164,7 @@
           <span class="chip">Python</span>
           <span class="chip">Data Analysis</span>
         </div>
-        
+
         <div class="project">
           <small>CERTIFICATE</small>
           <strong>Python Fundamentals</strong>
@@ -145,11 +172,11 @@
           <span class="chip">Python</span>
         </div>
       </article>
-      
+
     </section>
 
     <p class="notice">Prototype preview · Verification badges are examples only; no assessment or verification backend is connected.</p>
-    
+
   </main>
 
   <script src="js/app.js"></script>
